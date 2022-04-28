@@ -4,9 +4,8 @@
   <script>
 function go() {
   var url = location + '';
-  alert(url);
   var prefix = 'https://cogroid.com';
-  var path = url.substring(0, prefix.length);
+  var path = url.substring(prefix.length);
   alert(path);
   alert('::' + path.indexOf('/blog/'));
   if (path.indexOf('/blog/') == 0) {
