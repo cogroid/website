@@ -3,11 +3,16 @@
   <title>cogroid - Anroid port of OpenCog</title>
   <script>
 function go() {
+  alert('index.html');
   var url = location + '';
+  alert(url);
   var prefix = 'https://cogroid.com';
   var path = url.substring(0, prefix.length);
+  alert(path);
+  alert('::' + path.indexOf('/blog/'));
   if (path.indexOf('/blog/') == 0) {
     var folder = path.substring('/blog'.length);
+    alert(folder);
     location = 'https://github.com/cogroid/blog' + folder;
     return;
   }
