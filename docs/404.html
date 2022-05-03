@@ -15,6 +15,10 @@ function go() {
     location = 'https://github.com/cogroid/blog/tree/main' + folder;
     return;
   }
+  if (path.indexOf('/sponsor/') == 0) {
+    location = 'https://github.com/sponsors/cogroid';
+    return;
+  }  
   location = 'https://github.com/cogroid';
 }
   </script>
