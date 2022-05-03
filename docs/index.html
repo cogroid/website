@@ -1,12 +1,200 @@
 <html>
 <head>
-  <title>cogroid - Anroid port of OpenCog</title>
-  <script>
-function go() {
-  location = 'https://github.com/cogroid';
+  <title>cogroid - Android port of OpenCog: AGI - Machine Learning, Language, Reasoning, Robotics</title>
+  <link rel="icon" href="https://github.com/cogroid/resources/raw/main/images/logo/cogroid-16.png" />
+  <style>
+body {
+  margin: 0px;
+  padding: 0px;
+  background: white url('https://starofold.com/pd/sfpd-0001-a/division.png') repeat;
 }
-  </script>
+
+.yo-page {
+  max-width: 640px;
+  min-width: 440px;
+  min-height: 600px;
+  margin: 30px auto;
+  border: solid 1px whitesmoke;
+  border-radius: 0px 10px 0px 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.yo-top-left-cover {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+}
+
+.yo-top-left-inner {
+  position: absolute;
+  top: -22px;
+  left: -22px;
+}
+
+.yo-top-left-cover img {
+  width: 128px;
+  height: 128px;
+}
+
+.yo-page-title {
+  margin-left: 85px;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #16992b;
+  min-width: 440px;
+  padding-bottom: 10px;
+  border-bottom: solid 5px #be8a8c;
+}
+
+.yo-page-title a {
+  color: #16992b;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.yo-cover-front {
+  margin-left: 80px;
+  margin-top: 10px;
+  min-width: 440px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.yo-cover-front img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+
+.yo-take-note {
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-top: solid 2px #be8a8c;  
+}
+
+.yo-take-note img {
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+}
+
+.yo-take-note .yo-heading {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #16992b;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: solid 4px #be8a8c;
+  width: 200px;  
+}
+
+.yo-logo {
+  margin-left: 85px;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.yo-logo img {
+  //height: 48px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.yo-categories {
+  position: absolute;
+}
+
+.yo-category {
+  width: 100px;
+  height: 50px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #be8a8c;
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 28px;
+  padding: 10px 10px 0px 10px;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.yo-header {
+  margin-left: 100px;
+  margin-right: 15px;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #16992b;
+}
+
+.yo-line {
+  margin-left: 100px;
+  margin-right: 15px;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: grey;
+}
+
+.yo-btn {
+  padding: 5px 10px 5px 10px;
+  border-radius: 0px 10px 0px 10px;
+  background-color: #be8a8c;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  cursor: hand;
+  text-decoration: none;
+}
+
+  </style>
 </head>
-<body onload="go()">
+<body>
+  <div class="yo-page">
+    <div class="yo-top-left-cover">
+      <div class="yo-top-left-inner">
+        <img src="https://starofold.com/pd/sfpd-0001-a/bookmark-top-left.png" />
+      </div>
+      <div class="yo-categories">
+        <div class="yo-category" onclick="location= 'https://github.com/cogroid';">On GitHub</div>
+        <div style="top: 300px;" class="yo-category" onclick="location= 'https://cogroid.com/blog/';">Project's Blog</div>
+        <div style="top: 450px;" class="yo-category" onclick="location= 'https://cogroid.com/sponsor/';">Sponsor Me</div>
+      </div>
+    </div>
+
+    <div class="yo-header">cogroid - Android port of OpenCog: AGI - Machine Learning, Language, Reasoning, Robotics</div>
+
+    <div class="yo-line" style="margin-top: 50px">I am Dinh Thoai Tran (<a target="_blank" href="mailto:progrocus@gmail.com">progrocus@gmail.com</a>). I am from Virginia Beach, VA, USA.</div>
+
+    <div class="yo-line">I am working on cogroid project (Android port of OpenCog - AGI - Machine Learning, Language, Reasoning, Robotics). My goal is making OpenCog platform being available on Android devices so that we can develop Android applications based on OpenCog platform.</div>
+
+    <div class="yo-line" style="margin-top: 20px"><a class="yo-btn" href="https://cogroid.com/blog/">Browse my project's blog</a></div>
+
+    <div class="yo-line" style="margin-top: 20px">Your sponsorship will give me budgets for living expenses while working on cogroid project. It helps me working full-time on this project.</div>
+
+    <div class="yo-line" style="margin-top: 20px"><a class="yo-btn" href="https://cogroid.com/sponsor/">Sponsor me</a></div>
+
+    <div class="yo-header" style="margin-top: 50px; color: black;">My project's blog</div>
+
+    <div class="yo-line">[ May 3, 2022 ] - <a target="_blank" href="https://cogroid.com/blog/2022/05/03/build-libtool-2.4.6-for-android">Build libtool 2.4.6 for Android</a></div>
+
+    <div class="yo-line">[ April 27, 2022 ] - <a target="_blank" href="https://cogroid.com/blog/2022/04/27/build-boost-1.65.1-for-android">Build Boost 1.65.1 for Android</a></div>
+
+  </div>
 </body>
 </html>
