@@ -19,6 +19,15 @@ function go() {
     location = 'https://github.com/cogroid/blog/tree/main' + folder;
     return;
   }
+  if (path.indexOf('/discuss/') == 0) {
+    var folder = path.substring('/discuss'.length);
+    if (folder == '/') {
+      location = 'https://github.com/cogroid/cogroid/discussions';
+      return;
+    }
+    location = 'https://github.com/cogroid/cogroid/discussions' + folder;
+    return;
+  }
   if (path.indexOf('/sponsor/') == 0) {
     location = 'https://github.com/sponsors/cogroid';
     return;
